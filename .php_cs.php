@@ -1,4 +1,12 @@
 <?php
+/**
+ * PHP CS Fixer 格式化代码规则--配置文件
+ * 执行 php-cs-fixer fix file --config=本文件的绝对路径地址
+ * 该文件存放位置无所谓
+ * @author fisher
+ * @date 2018-10-12
+ */
+
 $header = <<<'EOF'
 This file is part of PHP CS Fixer Config.
 EOF;
