@@ -1,10 +1,6 @@
 <?php
 /**
- * PHP CS Fixer 格式化代码规则--配置文件
- * 执行 php-cs-fixer fix file --config=本文件的绝对路径地址
- * 该文件存放位置无所谓
- * @author fisher
- * @date 2018-10-12
+ * This file is part of PHP CS Fixer Config.
  */
 
 $header = <<<'EOF'
@@ -196,12 +192,13 @@ return PhpCsFixer\Config::create()
         'encoding'        => true,
         'no_empty_phpdoc' => true,
     ])
-    ->setFinder(PhpCsFixer\Finder::create()
-                                 ->exclude('public')
-                                 ->exclude('resources')
-                                 ->exclude('config')
-                                 ->exclude('runtime')
-                                 ->exclude('vendor')
-                                 ->in(__DIR__)
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+                         ->exclude('public')
+                         ->exclude('resources')
+                         ->exclude('config')
+                         ->exclude('runtime')
+                         ->exclude('vendor')
+                         ->in(__DIR__)
     )
     ->setUsingCache(false);
