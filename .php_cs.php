@@ -1,10 +1,22 @@
 <?php
 /**
- * This file is part of PHP CS Fixer Config.
+ * Created by PhpStorm.
+ *
+ * User: fisher
+ * Date: 2019/07/04
+ * Time: 10:42
  */
 
-$header = <<<'EOF'
-This file is part of PHP CS Fixer Config.
+ini_set('date.timezone', 'Asia/Shanghai');
+$author = 'fisher';
+$date   = date('Y/m/d');
+$hour   = date('H:i');
+$header = <<<EOF
+Created by PhpStorm.
+
+User: $author
+Date: $date
+Time: $hour
 EOF;
 
 return PhpCsFixer\Config::create()
